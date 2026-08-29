@@ -3,7 +3,7 @@ Tests for src/app.py
 
 The application module uses the relative imports (`from .backend import ...`),
 so it must be imported as part of the `src` package (an implicit namespace
-package) rather than as a standalone top-level module.
+package) rather than as standalone top-level module.
 """
 
 from pathlib import Path
