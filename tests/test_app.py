@@ -12,7 +12,7 @@ import sys
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
-# Import the database module first so its collections can be replaced with
+# Import the database module first so its collections can be easily replaced with
 # fakes before `src.app` triggers `database.init_database()` at import time.
 import src.backend.database as database  # noqa: E402
 
